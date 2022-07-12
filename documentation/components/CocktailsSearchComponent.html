@@ -1,0 +1,961 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>barkeeper-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">barkeeper-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  CocktailsSearchComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/cocktails-search/cocktails-search.component.ts</code>
+</p>
+
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Component for search input and displaying search results</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-cocktails-search</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./cocktails-search.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./cocktails-search.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#chosenLanguage" >chosenLanguage</a>
+                            </li>
+                            <li>
+                                <a href="#cocktails" >cocktails</a>
+                            </li>
+                            <li>
+                                <a href="#drinks" >drinks</a>
+                            </li>
+                            <li>
+                                <a href="#error" >error</a>
+                            </li>
+                            <li>
+                                <a href="#first" >first</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isError" >isError</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#language" >language</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#search" >search</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(cocktailsService: <a href="../injectables/CocktailsService.html" target="_self">CocktailsService</a>, loadService: <a href="../injectables/LoadService.html" target="_self">LoadService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Creates instances of cocktails service and load service and initialises loading and error subjects</p>
+</div>
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>cocktailsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CocktailsService.html" target="_self" >CocktailsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loadService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoadService.html" target="_self" >LoadService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="language"></a>
+                    <span class="name">
+                        <span ><b>language</b></span>
+                        <a href="#language"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>language(lang: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>setting a chosen language for recipes</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>lang</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="search"></a>
+                    <span class="name">
+                        <span ><b>search</b></span>
+                        <a href="#search"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>search(term: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="63"
+                            class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:63</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>getting search results and deals with loading/error states</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>term</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="chosenLanguage"></a>
+                    <span class="name">
+                        <span ><b>chosenLanguage</b></span>
+                        <a href="#chosenLanguage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;en&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:42</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>stores the choice language in which recipes are displayed</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cocktails"></a>
+                    <span class="name">
+                        <span ><b>cocktails</b></span>
+                        <a href="#cocktails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>stores the data received from api via service</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="drinks"></a>
+                    <span class="name">
+                        <span ><b>drinks</b></span>
+                        <a href="#drinks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Cocktail.html" target="_self" >Cocktail[]</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>stores array of data from service to be used in ngFor</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="error"></a>
+                    <span class="name">
+                        <span ><b>error</b></span>
+                        <a href="#error"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;Error...&quot;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:47</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>stores the error status text for display</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="first"></a>
+                    <span class="name">
+                        <span ><b>first</b></span>
+                        <a href="#first"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:52</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>used only to make sure &#39;no results&#39; message is not displayed before starting a search</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isError"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isError</b></span>
+                        <a href="#isError"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:27</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>stores the error state in boolean</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/cocktails-search/cocktails-search.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>stores the loading state in boolean</p>
+</div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Observable, Subject } from &#x27;rxjs&#x27;
+import { first } from &#x27;rxjs/operators&#x27;;
+
+import { Cocktail } from &#x27;../models/cocktail&#x27;;
+import { CocktailsService } from &#x27;../services/cocktails.service&#x27;;
+import { LoadService } from &#x27;../services/load.service&#x27;;
+/**
+ * Component for search input and displaying search results
+ * @class CocktailsSearchComponent
+*/
+@Component({
+  selector: &#x27;app-cocktails-search&#x27;,
+  templateUrl: &#x27;./cocktails-search.component.html&#x27;,
+  styleUrls: [&#x27;./cocktails-search.component.css&#x27;],
+})
+export class CocktailsSearchComponent implements OnInit {
+/**
+ * stores the loading state in boolean  
+ * @memberof CocktailsSearchComponent
+ */
+  public isLoading;
+/**
+ * stores the error state in boolean  
+ * @memberof CocktailsSearchComponent
+ */
+  public isError;
+/**
+ * stores the data received from api via service  
+ * @memberof CocktailsSearchComponent
+ */
+  cocktails: any;
+/**
+ * stores array of data from service to be used in ngFor  
+ * @memberof CocktailsSearchComponent
+ */
+  drinks: Cocktail[] &#x3D; [];
+/**
+ * stores the choice language in which recipes are displayed  
+ * @memberof CocktailsSearchComponent
+ */
+  chosenLanguage: string &#x3D; &quot;en&quot;;
+/**
+ * stores the error status text for display   
+ * @memberof CocktailsSearchComponent
+ */
+  error: string &#x3D; &quot;Error...&quot;;
+/**
+ * used only to make sure &#x27;no results&#x27; message is not displayed before starting a search
+ * @memberof CocktailsSearchComponent
+ */
+  first: boolean &#x3D; true;  
+  /**
+ * Creates instances of cocktails service and load service and initialises loading and error subjects 
+ */
+  constructor(private cocktailsService: CocktailsService, private loadService: LoadService) {
+    this.isLoading &#x3D; this.loadService.isLoading;
+    this.isError &#x3D; this.loadService.isError;
+   }
+  /**
+ * getting search results and deals with loading/error states
+ */   
+  search (term: string): void {
+    this.first &#x3D; false;
+    this.loadService.show();
+    this.cocktailsService.getSearchResults(term).pipe(first()).subscribe( data &#x3D;&gt; {
+      this.cocktails&#x3D;data;
+      this.drinks&#x3D;this.cocktails.drinks;
+      this.loadService.hide();
+      },
+      error &#x3D;&gt; {
+          this.loadService.fail();
+          this.error&#x3D;error.statusText;
+      }
+  )
+  }
+  /**
+ * setting a chosen language for recipes
+ */   
+  language(lang: string){
+    this.chosenLanguage&#x3D;lang;
+  }
+
+  ngOnInit(): void {
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;py-3 text-center container&quot;&gt;
+  &lt;div class&#x3D;&quot;row py-lg-5&quot;&gt;
+    &lt;div class&#x3D;&quot;col-lg-6 col-md-8 mx-auto&quot;&gt;
+      &lt;h1 class&#x3D;&quot;fst-italic fs-1&quot;&gt;Barkeeper&lt;/h1&gt;
+      &lt;p class&#x3D;&quot;lead text-muted&quot;&gt;Coctails search tool for barkeepers&lt;/p&gt;
+      &lt;div class&#x3D;&quot;input-group&quot;&gt;
+        &lt;input type&#x3D;&quot;search&quot; class&#x3D;&quot;form-control rounded&quot; placeholder&#x3D;&quot;Search&quot; aria-label&#x3D;&quot;Search&quot; aria-describedby&#x3D;&quot;search-addon&quot;  #searchBox (keyup.enter)&#x3D;&quot;search(searchBox.value)&quot;/&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;search-button btn btn-outline-secondary&quot; (click)&#x3D;&quot;search(searchBox.value)&quot;&gt;Search&lt;/button&gt;
+      &lt;/div&gt;      
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;div *ngIf&#x3D;&quot;isLoading | async&quot;class&#x3D;&quot;alert alert-info text-center col-lg-6 col-md-8 mx-auto&quot; role&#x3D;&quot;alert&quot;&gt; Loading...&lt;/div&gt;
+&lt;div *ngIf&#x3D;&quot;isError | async&quot;class&#x3D;&quot;alert alert-warning text-center col-lg-6 col-md-8 mx-auto&quot; role&#x3D;&quot;alert&quot;&gt; {{error}} &lt;/div&gt;
+&lt;div *ngIf&#x3D;&quot;(!drinks?.length) &amp;&amp; !(isLoading | async) &amp;&amp; !(first)&quot;class&#x3D;&quot;alert alert-secondary text-center col-lg-6 col-md-8 mx-auto&quot; role&#x3D;&quot;alert&quot;&gt; No results... &lt;/div&gt;
+&lt;div  class&#x3D;&quot;album py-5 &quot;&gt;
+  &lt;div  class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3&quot; &gt;
+      &lt;div *ngFor&#x3D;&quot;let drink of drinks&quot; class&#x3D;&quot;col-lg-4 d-flex align-items-stretch&quot;&gt;
+        &lt;div class&#x3D;&quot;card shadow-sm&quot;&gt;
+          &lt;img *ngIf&#x3D;&quot;drink.strDrinkThumb&quot; class&#x3D;&quot;bd-placeholder-img card-img-top&quot; [src]&#x3D;&quot;drink.strDrinkThumb+&#x27;/preview&#x27;&quot; width&#x3D;&quot;100%&quot; height&#x3D;&quot;100%&quot; aria-label&#x3D;&quot;Placeholder: Thumbnail&quot; preserveAspectRatio&#x3D;&quot;xMidYMid slice&quot; focusable&#x3D;&quot;false&quot;&gt;
+          &lt;div class&#x3D;&quot;card-body&quot;&gt;
+            &lt;p class&#x3D;&quot;card-text fw-bold&quot;&gt;{{drink.strDrink}}&lt;/p&gt;
+            &lt;div class&#x3D;&quot;card-text &quot;&gt;
+              &lt;div class&#x3D;&quot;text-muted&quot;&gt;{{drink.strGlass}}&lt;/div&gt;
+              &lt;ul&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient1&quot;&gt;{{drink.strIngredient1}} {{drink.strMeasure1}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient2&quot;&gt;{{drink.strIngredient2}} {{drink.strMeasure2}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient3&quot;&gt;{{drink.strIngredient3}} {{drink.strMeasure3}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient4&quot;&gt;{{drink.strIngredient4}} {{drink.strMeasure4}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient5&quot;&gt;{{drink.strIngredient5}} {{drink.strMeasure5}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient6&quot;&gt;{{drink.strIngredient6}} {{drink.strMeasure6}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient7&quot;&gt;{{drink.strIngredient7}} {{drink.strMeasure7}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient8&quot;&gt;{{drink.strIngredient8}} {{drink.strMeasure8}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient9&quot;&gt;{{drink.strIngredient9}} {{drink.strMeasure9}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient10&quot;&gt;{{drink.strIngredient10}} {{drink.strMeasure10}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient11&quot;&gt;{{drink.strIngredient11}} {{drink.strMeasure11}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient12&quot;&gt;{{drink.strIngredient12}} {{drink.strMeasure12}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient13&quot;&gt;{{drink.strIngredient13}} {{drink.strMeasure13}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient14&quot;&gt;{{drink.strIngredient14}} {{drink.strMeasure14}}&lt;/li&gt;
+                &lt;li *ngIf&#x3D;&quot;drink.strIngredient15&quot;&gt;{{drink.strIngredient15}} {{drink.strMeasure15}}&lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;div *ngIf&#x3D;&quot;chosenLanguage&#x3D;&#x3D;&#x27;en&#x27;&quot;&gt;{{drink.strInstructions}}&lt;/div&gt;
+              &lt;div *ngIf&#x3D;&quot;chosenLanguage&#x3D;&#x3D;&#x27;de&#x27;&quot;&gt;{{drink.strInstructionsDE}}&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;d-flex justify-content-between align-items-center&quot;&gt;
+              &lt;div class&#x3D;&quot;btn-group&quot;&gt;
+                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;en-button btn btn-sm btn-outline-secondary&quot; (click)&#x3D;&quot;language(&#x27;en&#x27;)&quot;&gt;EN&lt;/button&gt;
+                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;de-button btn btn-sm btn-outline-secondary&quot; (click)&#x3D;&quot;language(&#x27;de&#x27;)&quot;&gt;DE&lt;/button&gt;
+              &lt;/div&gt;
+              &lt;small class&#x3D;&quot;text-muted&quot;&gt;{{drink.strAlcoholic}}&lt;/small&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./cocktails-search.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><section class="py-3 text-center container">  <div class="row py-lg-5">    <div class="col-lg-6 col-md-8 mx-auto">      <h1 class="fst-italic fs-1">Barkeeper</h1>      <p class="lead text-muted">Coctails search tool for barkeepers</p>      <div class="input-group">        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"  #searchBox (keyup.enter)="search(searchBox.value)"/>        <button type="button" class="search-button btn btn-outline-secondary" (click)="search(searchBox.value)">Search</button>      </div>          </div>  </div></section><div *ngIf="isLoading | async"class="alert alert-info text-center col-lg-6 col-md-8 mx-auto" role="alert"> Loading...</div><div *ngIf="isError | async"class="alert alert-warning text-center col-lg-6 col-md-8 mx-auto" role="alert"> {{error}} </div><div *ngIf="(!drinks?.length) && !(isLoading | async) && !(first)"class="alert alert-secondary text-center col-lg-6 col-md-8 mx-auto" role="alert"> No results... </div><div  class="album py-5 ">  <div  class="container">    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >      <div *ngFor="let drink of drinks" class="col-lg-4 d-flex align-items-stretch">        <div class="card shadow-sm">          <img *ngIf="drink.strDrinkThumb" class="bd-placeholder-img card-img-top" [src]="drink.strDrinkThumb+\'/preview\'" width="100%" height="100%" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">          <div class="card-body">            <p class="card-text fw-bold">{{drink.strDrink}}</p>            <div class="card-text ">              <div class="text-muted">{{drink.strGlass}}</div>              <ul>                <li *ngIf="drink.strIngredient1">{{drink.strIngredient1}} {{drink.strMeasure1}}</li>                <li *ngIf="drink.strIngredient2">{{drink.strIngredient2}} {{drink.strMeasure2}}</li>                <li *ngIf="drink.strIngredient3">{{drink.strIngredient3}} {{drink.strMeasure3}}</li>                <li *ngIf="drink.strIngredient4">{{drink.strIngredient4}} {{drink.strMeasure4}}</li>                <li *ngIf="drink.strIngredient5">{{drink.strIngredient5}} {{drink.strMeasure5}}</li>                <li *ngIf="drink.strIngredient6">{{drink.strIngredient6}} {{drink.strMeasure6}}</li>                <li *ngIf="drink.strIngredient7">{{drink.strIngredient7}} {{drink.strMeasure7}}</li>                <li *ngIf="drink.strIngredient8">{{drink.strIngredient8}} {{drink.strMeasure8}}</li>                <li *ngIf="drink.strIngredient9">{{drink.strIngredient9}} {{drink.strMeasure9}}</li>                <li *ngIf="drink.strIngredient10">{{drink.strIngredient10}} {{drink.strMeasure10}}</li>                <li *ngIf="drink.strIngredient11">{{drink.strIngredient11}} {{drink.strMeasure11}}</li>                <li *ngIf="drink.strIngredient12">{{drink.strIngredient12}} {{drink.strMeasure12}}</li>                <li *ngIf="drink.strIngredient13">{{drink.strIngredient13}} {{drink.strMeasure13}}</li>                <li *ngIf="drink.strIngredient14">{{drink.strIngredient14}} {{drink.strMeasure14}}</li>                <li *ngIf="drink.strIngredient15">{{drink.strIngredient15}} {{drink.strMeasure15}}</li>              </ul>              <div *ngIf="chosenLanguage==\'en\'">{{drink.strInstructions}}</div>              <div *ngIf="chosenLanguage==\'de\'">{{drink.strInstructionsDE}}</div>            </div>            <div class="d-flex justify-content-between align-items-center">              <div class="btn-group">                <button type="button" class="en-button btn btn-sm btn-outline-secondary" (click)="language(\'en\')">EN</button>                <button type="button" class="de-button btn btn-sm btn-outline-secondary" (click)="language(\'de\')">DE</button>              </div>              <small class="text-muted">{{drink.strAlcoholic}}</small>            </div>          </div>        </div>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CocktailsSearchComponent', 'selector': 'app-cocktails-search'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CocktailsSearchComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CocktailsSearchComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
