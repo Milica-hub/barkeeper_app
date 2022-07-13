@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test --watch=false --browsers=ChromeHeadlessCustom"
+    "test": "ng test --watch=false --browsers=ChromeHeadlessCustom",
+    "doc": "npx compodoc -p tsconfig.json -s"
   },
   "private": true,
   "dependencies": {
