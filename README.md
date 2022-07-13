@@ -1,7 +1,7 @@
 # BarkeeperApp
 
 ![Barkeeper actions](https://github.com/Milica-hub/barkeeper_app/actions/workflows/node.js.yml/badge.svg)
-
+<img src="./documentation/images/coverage-badge-documentation.svg">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
