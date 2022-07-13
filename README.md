@@ -1,5 +1,8 @@
 # BarkeeperApp
 
+![Barkeeper actions](https://github.com/Milica-hub/barkeeper_app/actions/workflows/node.js.yml/badge.svg)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 
 ## Development server
